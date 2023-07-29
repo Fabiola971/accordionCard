@@ -1,0 +1,180 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(to bottom, #a56be2, #9769e2, #8867e1, #7865e1, #6663e0);
+    background-repeat: no-repeat;
+    font-family: 'Kumbh Sans', sans-serif;
+    position: relative;
+    height: 75vh;
+}
+
+li, p{
+    font-size: 12px;
+    width: 100%;
+}
+
+p, span{
+    cursor: pointer;
+}
+
+.arrowSpinning{
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+}
+
+.container{
+    background-color: rgb(255, 255, 255);
+    width: 360px;
+    min-width: 260px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    margin-left: auto;
+    padding: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25vh;
+    box-shadow: 5px 20px 25px rgb(90, 75, 190);    
+}
+
+.flex{
+    display: flex;
+    border-bottom: 0.5px solid hsl(240, 5%, 91%);
+    padding:  20px 0px 20px 0px;
+    justify-content: space-between;
+}
+
+.flex p:hover{
+    color: hsl(14, 88%, 65%);
+}
+
+.fontWeight{
+    font-weight: 700;
+}
+
+.hidden{
+    display: none;
+}
+
+.illustration{
+    position: relative;
+}
+
+.questions h1{
+    text-align: center;
+    z-index: 1;
+    margin-top: 130px;
+}
+
+.question li{
+    list-style-type: none;
+    color: hsl(240, 6%, 50%);
+}
+
+.question ul{
+    margin-top: 10px;
+}
+
+.show{
+    visibility: visible;
+}
+
+/* *************Picture head */
+.desktopDesign1, .desktopDesign2, .desktopDesign3, .desktopDesign4{
+    display: none;
+}
+
+.mobileDesign1, .mobileDesign2{
+    position: absolute;      
+}
+
+.mobileDesign1{
+    top: -12px;
+    width:  270px; 
+    right: 10px;   
+}
+
+.mobileDesign2{
+    top: -155px;
+    left: 12px;  
+}
+
+@media (min-width:1440px){
+    .container{
+        display: flex;
+        justify-content:space-between;
+        width: 800px;
+        position: relative;
+        padding-bottom: 0;
+        padding-top: 0;
+    }
+
+    .desktopDesign1, .desktopDesign2 {
+        position: absolute;
+        display: block;
+    }
+
+    .desktopDesign1, .desktopDesign2{
+        width: 400px;
+    }
+
+    .desktopDesign2{
+        left: -68px;   
+    }
+
+/* ************************************* Pattern ******************** */
+    .desktopDesign1{
+        top: -140px;
+        left: -350px;
+        width: 650px;    
+    }
+
+/**************************************** Woman  *******************/
+    .desktopDesign2{
+        top: 60px;
+    }
+
+/* ************************************* Box ****************************/
+    .desktopDesign3{
+        display: flex;
+        margin-left: -13%;
+        top: 40%;
+        width: 150px;
+        z-index: 1;
+        position: absolute;  
+    }
+
+
+    .illustration{
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        width: 50%;
+        padding-bottom: 20px;
+        position: relative;
+        left: -30px;    
+    }
+
+    .mobileDesign1,.mobileDesign2{
+        display: none;
+    }
+    
+    .questions{
+        width: 370px;
+        padding: 30px 50px 40px 0;
+    }
+
+    .questions h1{
+        margin-top: 0;
+        text-align: start;
+    }    
+}
