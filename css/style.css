@@ -108,6 +108,28 @@ p, span{
     left: 12px;  
 }
 
+@media (max-width:374px) {
+   .container{
+    max-width: 280px;
+    min-width: 280px;
+   }
+
+   .mobileDesign2{
+    top: -120px;
+   }
+
+   .mobileDesign1{
+    top: -20px;
+    right: 2px;
+    width: 200px;
+   }
+
+   .questions h1{
+    margin-top: 90px;
+   }
+   
+}
+
 @media (min-width:1440px){
     .container{
         display: flex;
